@@ -6,8 +6,12 @@
     font-family: sans-serif;
     margin: 20px;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
   }
-  
+  h1,h2,h3,h4,h5,h6 {
+    color: #333;
+  }
   h1 {
     margin-top: 0;
     font-size: 22px;
@@ -40,6 +44,9 @@
   
   code {
     font-size: 1.2em;
+    background-color: rgb(0, 0, 0);
+    padding: auto;
+    border-radius: 4px;
   }
   
   ul {
@@ -58,7 +65,7 @@
   
   .square {
     background: #fff;
-    border: 1px solid #999;
+    border: 2px solid #ccc;
     float: left;
     font-size: 24px;
     font-weight: bold;
@@ -69,6 +76,11 @@
     padding: 0;
     text-align: center;
     width: 34px;
+    color: #5f5f5f;
+  }
+
+  .square:hover{
+    background-color: #9c9c9c;
   }
   
   .board-row:after {
@@ -79,10 +91,14 @@
   
   .status {
     margin-bottom: 10px;
+    color: #555;
   }
   .game {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
   }
   
   .game-info {
@@ -90,6 +106,27 @@
   }
 
   .highlight {
-    background-color: greenyellow;
+    background-color: #ffeb3b;
+    color: #333;
+    animation: highlight-blink 0.5s ease infinite alternate;
+  }
+
+  button {
+    background-color: #4caf50;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
   }
   
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    background-color: #39873a;
+  }

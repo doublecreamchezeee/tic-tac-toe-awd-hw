@@ -52,7 +52,7 @@ function Board({ xIsNext, squares, onPlay }) {
           key={index}
           value={squares[index]}
           onSquareClick={() => handleClick(index)}
-          isWinningSquare={winningSquares.includes(index)} // Highlight if part of the winning line
+          isWinningSquare={winningSquares.includes(index)}
         />
       );
     }
