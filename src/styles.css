@@ -8,6 +8,8 @@
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    justify-content: center;
   }
   h1,h2,h3,h4,h5,h6 {
     color: #333;
@@ -96,7 +98,7 @@
   .game {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: flex-start;
     gap: 20px;
   }
