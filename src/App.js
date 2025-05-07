@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 // some random line
 
+
+// new commit to master
 function Square({ value, onSquareClick, isWinningSquare }) {
   return (
     <button
